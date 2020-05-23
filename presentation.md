@@ -23,7 +23,7 @@ If a user is currently authenticated to a website, any HTTP requests made to tha
 If the request is initiated by an attacker, when this request reaches the backend, the server will have no way to distinguish between a malicious request and a legitimate request.
 CSRF attacks target functionality that causes a state change on the server, such as changing the victim’s email address or password or purchasing something.
 How does the attack work?
-Suppose a user John is logged in to his net banking website (http://bank.com). He receives a malicious mail from an attacker :
+Suppose a user John is logged in to his net banking website. He receives a malicious mail from an attacker :
 Using GET Request —
 •	The email can contain a bank’s URL which is disguised as an ordinary link, and when John clicks on it, the browser makes a GET call with all the credentials of John’s user session on his net banking website.
 •	Or the email can simply render a 0 X 0 image with the bank’s URL which triggers a GET request automatically.
